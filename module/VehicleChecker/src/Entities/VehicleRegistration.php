@@ -23,7 +23,7 @@ class VehicleRegistration implements Stringable
         $filteredRegistrationNumber = $alnumFilter->filter($registrationNumber);
 
         if (is_string($filteredRegistrationNumber) !== true) {
-            throw new \RuntimeException();
+            throw new \RuntimeException('$filteredRegistrationNumber is expected to be a string');
         }
 
         $this->registrationNumber = $filteredRegistrationNumber;
