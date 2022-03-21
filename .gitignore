@@ -1,0 +1,13 @@
+vendor/
+config/development.config.php
+data/cache/*
+data/@/*
+!data/cache/.gitkeep
+phpunit.xml
+.phpunit.result.cache
+spa/node_modules
+.bash_history
+.npm
+.config
+.composer
+.idea
